@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "styles.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
+
+
+<div class="absolute top-50 left-50 z-20 bg-white rounded-sm">
+          
+          <div class="w-[241px] h-[287px] relative rotate-1 shadow-[0px_4px_100px_rgba(0,0,0,0.25)]">
+            <img src="./img/Rectangle 18.png" alt="" />
