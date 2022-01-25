@@ -1,0 +1,9 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <rect rx="50" id="svg_5" height="3.07692" width="21" y="284.61423" x="382" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(45 400 282.538)" rx="50" id="svg_6" height="3.07692" width="11" y="281" x="394.49999" stroke="#000" fill="#000000"/>
+  <rect transform="rotate(-45 400 290.538)" rx="50" id="svg_7" height="3.07692" width="11" y="289" x="394.49996" stroke="#000" fill="#000000"/>
+ </g>
+</svg>
