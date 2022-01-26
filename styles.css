@@ -23,3 +23,15 @@ div.vertical-line2 {
   top: 1400px;
   transform: translateY(90deg);
 }
+
+#sortbox:checked ~ #sortboxmenu {
+        opacity: 1;
+    }
+
+    #sortbox2:checked ~ #sortboxmenu {
+        opacity: 1;
+    }
+
+    #sortbox3:checked ~ #sortboxmenu {
+        opacity: 1;
+    }
