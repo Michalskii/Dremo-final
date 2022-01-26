@@ -1,5 +1,3 @@
-
-
 * {
   padding: 0;
   margin: 0;
@@ -24,14 +22,24 @@ div.vertical-line2 {
   transform: translateY(90deg);
 }
 
-#sortbox:checked ~ #sortboxmenu {
-        opacity: 1;
-    }
+select {
+  color: #5e5e5e;
+  padding: 8px 12px;
+  cursor: pointer;
 
-    #sortbox2:checked ~ #sortboxmenu {
-        opacity: 1;
-    }
+  border-radius: 5px;
+  font-weight: 600;
+}
 
-    #sortbox3:checked ~ #sortboxmenu {
-        opacity: 1;
-    }
+select:hover,
+select:focus {
+  background-color: #fcfcfc;
+  outline: none;
+}
+
+select option {
+  background-color: white;
+}
+select option:hover {
+  background-color: white;
+}
