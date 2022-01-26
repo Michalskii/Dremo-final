@@ -65,44 +65,70 @@
       <div
         class="bg-white w-[768px] h-[108px] rounded-[60px] shadow-[0px_4px_100px_rgba(0,0,0,0.2)] flex justify-between items-center"
       >
-        <div class="flex flex-col ml-[80px]">
-          <div class="flex space-around">
-            <span class="font-bold">Location</span>
-            <object
-              data="./img/Arrow.svg"
-              class="ml-[15px]"
-              width="14"
-              type=""
-            ></object>
-          </div>
-          <div class="pt-[10px]"><span>Sylhet</span></div>
-        </div>
+       
+<div class="relative ml-[80px]">
+    <input type="checkbox" id="sortbox" class="hidden absolute">
+    <label for="sortbox" class="flex items-center space-x-1 cursor-pointer">
+    <span class="text-lg font-semibold">Location</span>
+    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+    </label>
 
-        <div class="flex flex-col">
-          <div class="flex space-around">
-            <span class="font-bold">Property Type</span>
-            <object
-              data="./img/Arrow.svg"
-              class="ml-[15px]"
-              width="14"
-              type=""
-            ></object>
-          </div>
-          <div class="pt-[10px]"><span>Duplex</span></div>
-        </div>
+        <div id="sortboxmenu" class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-gray-white border border-gray-400 transition delay-75 ease-in-out z-10">
+        <ul class="block text-center text-gray-900 px-7">
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">Gdynia</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">Sydney</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">New York</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">London</a></li>
+        </ul>
+    </div>
+</div>
 
-        <div class="flex flex-col">
-          <div class="flex space-around">
-            <span class="font-bold">Max price</span>
-            <object
-              data="./img/Arrow.svg"
-              class="ml-[15px]"
-              width="14"
-              type=""
-            ></object>
-          </div>
-          <div class="pt-[10px]"><span>$3,000</span></div>
-        </div>
+<div class="relative ml-[80px]">
+    <input type="checkbox" id="sortbox2" class="hidden absolute">
+    <label for="sortbox2" class="flex items-center space-x-1 cursor-pointer">
+    <span class="text-lg font-semibold">Property type</span>
+    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+    </label>
+
+        <div id="sortboxmenu" class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-gray-white border border-gray-400 transition delay-75 ease-in-out z-10">
+        <ul class="block text-center text-gray-900 px-5">
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">Bungalow</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">Ranch</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">Townhome</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">Tent</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="relative ml-[80px]">
+    <input type="checkbox" id="sortbox3" class="hidden absolute">
+    <label for="sortbox3" class="flex items-center space-x-1 cursor-pointer">
+    <span class="text-lg font-semibold">Max price</span>
+    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+    </label>
+
+        <div id="sortboxmenu" class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-gray-white border border-gray-400 transition delay-75 ease-in-out z-10">
+        <ul class="block text-center text-gray-900 px-5">
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">$100</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">$1000</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">$10000</a></li>
+            <li><a href="#" class="block px-3 py-2 hover:bg-gray-200 hover:font-semibold">$10002</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+     
+
+      
 
         <div
           class="mr-[80px] bg-[#4270C9] w-[54] h-[54] flex justify-center items-center"
