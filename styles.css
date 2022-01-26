@@ -43,3 +43,47 @@ select option {
 select option:hover {
   background-color: white;
 }
+
+.bookNow {
+  transition: 0.3s;
+}
+
+.bookNow:hover {
+  background-color: white;
+  color: #4270c9;
+}
+
+.bookNow:hover > .bookNowDiv {
+  background-color: #4270c9;
+}
+
+.exploreMore {
+  transition: 0.3s;
+}
+
+.exploreMore:hover {
+  background-color: #4270c9;
+}
+.exploreMore:hover > .exploreSp {
+  color: white;
+}
+.exploreMore:hover > .exploreMoreDiv {
+  background-color: white;
+}
+.findHome:hover {
+  background-color: white;
+  transition: 0.4s;
+  border: 0.2px solid grey;
+}
+
+.findHomeSpan {
+  color: white;
+}
+.findHome:hover > .findHomeSpan {
+  color: #4270c9;
+  font-weight: 500;
+}
+li:hover {
+  font-weight: 500;
+  
+}
