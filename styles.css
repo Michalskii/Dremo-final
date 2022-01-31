@@ -1,15 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+.mainBody {
+  width: 1440px;
+}
+@media (min-width: 1440px) {
+  .mainBody {
+    margin: auto;
+  }
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "EB Garamond", serif;
 }
 
 div.vertical-line {
   border-left: 2px solid black;
   height: 95px;
   position: absolute;
-  left: 155px;
-  top: 1400px;
+  left: 9%;
+  top: 25%;
   transform: translateY(90deg);
 }
 
@@ -17,8 +28,8 @@ div.vertical-line2 {
   border-left: 2px solid rgb(179, 179, 179);
   height: 148px;
   position: absolute;
-  left: 155px;
-  top: 1400px;
+  left: 9%;
+  top: 25%;
   transform: translateY(90deg);
 }
 
@@ -85,5 +96,4 @@ select option:hover {
 }
 li:hover {
   font-weight: 500;
-  
 }
