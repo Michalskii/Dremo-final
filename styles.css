@@ -97,3 +97,7 @@ select option:hover {
 li:hover {
   font-weight: 500;
 }
+
+.dots {
+  z-index: -10;
+}
