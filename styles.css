@@ -3,11 +3,7 @@
 .mainBody {
   width: 1440px;
 }
-@media (min-width: 1440px) {
-  .mainBody {
-    margin: auto;
-  }
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -105,4 +101,104 @@ li:hover {
   background-position: 0 0, 50px 50px;
   background-size: 21px 21px;
   opacity: 0.5;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainBody {
+    margin: auto;
+    width: 1440;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .mainBody {
+    width: 100vw;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+  .h1 {
+    font-size: 36px;
+    margin: auto;
+  }
+
+  li {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .overlay-div {
+    display: none;
+  }
+
+  .gallery {
+    margin: 20px;
+  }
+
+  div.vertical-line,
+  div.vertical-line2,
+  .gallery-number {
+    display: none;
+  }
+
+  .bookNow {
+    margin-left: 75px;
+  }
+
+  .house-pic {
+    display: none;
+  }
+
+  .featuredHomes {
+    padding-top: 50px;
+    align-items: center;
+  }
+  .exploreMore {
+    margin-top: 20px;
+  }
+
+  .quote_svg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .mainBody {
+    width: 100vw;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .h1 {
+    font-size: 36px;
+    margin: auto;
+  }
+
+  li {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gallery {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .house-pic {
+    display: none;
+  }
+
+  .featuredHomes {
+    padding-top: 50px;
+    align-items: center;
+  }
+
+  .quote_svg {
+    display: none;
+  }
 }
