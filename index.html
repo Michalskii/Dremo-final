@@ -28,19 +28,19 @@
       <!-- Menu-->
 
       <nav
-        class="flex justify-between items-baseline lg:py-16 lg:px-24 sm:gap-y-3"
+        class="flex justify-between items-baseline lg:py-16 lg:px-24 gap-y-3"
       >
         <h1 class="lg:text-4xl font-medium h1">
           <a href="#" class=""><span class="text-[#4270C9]">Dre</span>mo</a>
         </h1>
 
         <ul
-          class="text-[#2C3131] text-base flex justify-between items-center sm:pl-[100px]"
+          class="text-[#2C3131] text-base sm:flex sm:justify-between items-center pl-[20px] sm:pl-[100px]"
         >
           <li class="lg:p-8"><a href="#">Home</a></li>
           <li class="lg:p-8">
             <div
-              class="rectangle8 bg-[#4270C9] w-[141px] h-[47px] rounded-[30px] flex justify-center items-center shadow-[4px_20px_32px_rgba(158,175,201,0.2)] findHome"
+              class="rectangle8 sm:bg-[#4270C9] sm:w-[141px] sm:h-[47px] sm:rounded-[30px] sm:flex sm:justify-center sm:items-center sm:shadow-[4px_20px_32px_rgba(158,175,201,0.2)] findHome"
             >
               <a href="#" class="findHomeSpan"
                 ><span class="">Find Home</span></a
@@ -54,14 +54,16 @@
         </ul>
       </nav>
 
-      <header class="sm:py-6">
-        <h2 class="xl:text-[64px] font-medium flex justify-center sm:text-4xl">
+      <header class="py-6">
+        <h2
+          class="xl:text-[64px] sm:font-medium sm:flex sm:justify-center text-4xl jajko"
+        >
           Are you looking for
           <span class="text-[#4270C9]">&nbspdream&nbsp </span> home?
         </h2>
 
         <h3
-          class="xl:text-[24px] font-light flex justify-center sm:text-xl pt-[20px]"
+          class="xl:text-[24px] font-light sm:flex sm:justify-center sm:text-xl pt-[20px] h3"
           id="h3"
         >
           The most accurate property valuation Website in
@@ -74,11 +76,11 @@
 
       <!-- Search bar-->
 
-      <div class="flex justify-center -mt-8">
+      <div class="sm:flex sm:justify-center sm:-mt-8 searchBar">
         <div
-          class="bg-white w-[768px] h-[108px] rounded-[60px] shadow-[0px_4px_100px_rgba(0,0,0,0.2)] flex justify-between items-center"
+          class="bg-white sm:w-[768px] sm:h-[108px] sm:rounded-[60px] sm:shadow-[0px_4px_100px_rgba(0,0,0,0.2)] sm:flex sm:justify-between sm:items-center"
         >
-          <div class="relative ml-[80px]">
+          <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
             <select name="location" id="location-select1" class="text-xl">
               <option disabled selected>Location</option>
               <option value="gdynia" class="">Gdynia</option>
@@ -88,7 +90,7 @@
             </select>
           </div>
 
-          <div class="relative ml-[80px]">
+          <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
             <select name="location" id="location-select2" class="text-xl">
               <option disabled selected>Property Type</option>
               <option value="gdynia" class="">Bungalow</option>
@@ -98,7 +100,9 @@
             </select>
           </div>
 
-          <div class="relative ml-[80px] mr-[40px]">
+          <div
+            class="relative sm:ml-[80px] sm:mr-[40px] py-3 sm:py-0 text-center"
+          >
             <select name="location" id="location-select3" class="text-xl">
               <option disabled selected>Max price</option>
               <option value="gdynia" class="">$10</option>
@@ -109,7 +113,7 @@
           </div>
 
           <div
-            class="mr-[80px] bg-[#4270C9] w-[54] h-[54] flex justify-center items-center mr-[40px]"
+            class="sm:mr-[80px] bg-[#4270C9] w-[54] h-[54] flex justify-center items-center mr-[40px] mx-[44%] sm:mx-0 py-5 sm:py-0"
           >
             <object
               data="./img/Vector.svg"
@@ -122,7 +126,7 @@
       </div>
 
       <!-- Main section-->
-      <main class="flex justify-center flex-col pt-[100px]">
+      <main class="flex justify-center flex-col sm:pt-[100px] pt-[30px]">
         <h1 class="text-center text-4xl">How it works</h1>
         <h2 class="text-center text-sm pt-[30px]">
           Safe and easy! Your bokking will be confirmed in less than 2 working
@@ -133,9 +137,9 @@
         <!-- Gallery-->
 
         <section
-          class="flex flex-row lg:pl-[220px] lg:pr-[220px] pt-[60px] relative gallery"
+          class="sm:flex sm:flex-row lg:pl-[220px] lg:pr-[220px] pt-[60px] relative gallery"
         >
-          <div class="flex basis 9/12 items-start space-x-20">
+          <div class="sm:flex basis 9/12 items-start sm:space-x-20">
             <div class="flex flex-col justify-start relative">
               <div class="relative">
                 <img src="./img/Rectangle 272.png" alt="guy with a phone" />
@@ -146,8 +150,8 @@
                 </div>
               </div>
               <div>
-                <h1 class="text-2xl pt-[20px] font-normal">Search</h1>
-                <h2 class="text-sm pt-[12px]">
+                <h1 class="text-2xl sm:pt-[20px] font-normal">Search</h1>
+                <h2 class="text-sm sm:pt-[12px]">
                   Find a home from our search bar.<br />
                   Enter your specific loaction and date
                 </h2>
@@ -165,7 +169,9 @@
                 <div
                   class="w-[50px] h-[50px] bg-[#4270C9] absolute bottom-0 right-0 rounded-tl-[35px] overlay-div"
                 >
-                  <h4 class="text-white text-2xl pt-[10px] pl-[12px]">01</h4>
+                  <h4 class="text-white text-2xl sm:pt-[10px] sm:pl-[12px]">
+                    01
+                  </h4>
                 </div>
               </div>
               <div>
@@ -178,12 +184,14 @@
             </div>
 
             <div class="flex flex-col justify-start relative">
-              <div class="relative">
+              <div class="relative mt-[50px] sm:mt-0">
                 <img src="./img/Rectangle 19.png" alt="dude with a laptop" />
                 <div
                   class="w-[50px] h-[50px] bg-black absolute bottom-0 left-0 rounded-tr-[35px] overlay-div"
                 >
-                  <h4 class="text-white text-2xl pl-[8px] pt-[10px]">01</h4>
+                  <h4 class="text-white text-2xl sm:pl-[8px] sm:pt-[10px]">
+                    01
+                  </h4>
                 </div>
               </div>
               <div>
@@ -210,9 +218,9 @@
         </section>
 
         <div
-          class="lg:flex lg:flex-row pt-[150px] lg:justify-between sm:flex sm:flex-col sm:pt-16 sm:m-auto"
+          class="lg:flex lg:flex-row pt-[30px] sm:pt-[150px] lg:justify-between sm:flex sm:flex-col sm:pt-16 sm:m-auto"
         >
-          <div class="flex flex-col justify-around pl-[144px]">
+          <div class="flex flex-col justify-around pl-2 sm:pl-[144px]">
             <h3 class="text-4xl font-medium py-6">
               The safest way to<br />
               book your land/home
@@ -253,7 +261,7 @@
             <img
               src="./img/Ellipse 1.png"
               alt=""
-              class="absolute top-[100] left-[100] shadow-[4px_20px_32px_rgba(158,175,201,0.2)]"
+              class="absolute top-[100] left-[100] shadow-[4px_20px_32px_rgba(158,175,201,0.2)] ellipsePic"
             />
           </div>
         </div>
@@ -265,12 +273,12 @@
         class="lg:flex lg:flex-row lg:justify-between lg:pt-[100px] lg:h-[50vh] sm:flex sm:flex-col sm:mt-6"
       >
         <div
-          class="lg:basis-3/6 lg:flex lg:justify-center relative sm:grid sm:grid-cols-2 sm:grid-flow-row sm:justify-items-center sm:gap-y-3"
+          class="lg:basis-3/6 lg:flex lg:justify-center relative sm:grid sm:grid-cols-2 sm:grid-flow-row sm:justify-items-center sm:gap-y-3 flex flex-col items-center"
         >
           <!-- First card-->
 
           <div
-            class="lg:absolute lg:top-50 lg:left-50 z-20 bg-white rounded-sm"
+            class="lg:absolute lg:top-50 lg:left-50 z-20 bg-white rounded-sm py-5 sm:py-0"
           >
             <div
               class="w-[241px] h-[287px] relative lg:rotate-1 shadow-[0px_4px_100px_rgba(0,0,0,0.25)]"
@@ -344,7 +352,7 @@
 
           <!-- Second card-->
           <div
-            class="lg:absolute lg:bottom-20 lg:right-20 z-10 bg-white rounded-sm"
+            class="lg:absolute lg:bottom-10 lg:right-20 z-10 bg-white rounded-sm py-5 sm:py-0"
           >
             <div
               class="w-[241px] h-[287px] relative lg:rotate-3 shadow-[0px_4px_100px_rgba(0,0,0,0.25)]"
@@ -420,7 +428,7 @@
           <!-- Third card-->
 
           <div
-            class="lg:absolute lg:bottom-20 lg:left-[110px] z-10 sm:col-span-2"
+            class="lg:absolute lg:bottom-0 lg:left-[110px] z-10 sm:col-span-2 py-5 sm:py-0"
           >
             <div
               class="w-[241px] h-[287px] relative lg:-rotate-90 shadow-[0px_4px_100px_rgba(0,0,0,0.25)] bg-white"
@@ -495,14 +503,16 @@
         </div>
 
         <div class="flex flex-col basis-3/6 justify-between featuredHomes">
-          <h3 class="text-4xl font-medium">Featured Homes</h3>
-          <p class="text-lg">
+          <h3 class="text-4xl font-medium py-3 sm:py-0 text-center">
+            Featured Homes
+          </h3>
+          <p class="text-lg py-3 sm:py-0 text-center">
             Whether you prefer to live in a fresh and cool<br />
             environment with like-minded people or need<br />
             an open space for live in,our Dremo websites<br />
             visits & booking can be the right fit for you!
           </p>
-          <p class="text-lg">
+          <p class="text-lg py-3 sm:py-0 text-center">
             Whether you prefer to live in a fresh and cool<br />
             environment with like-minded people
           </p>
@@ -529,14 +539,14 @@
       </section>
 
       <!-- Video-->
-      <div class="flex justify-center pt-[100px] relative">
+      <div class="flex justify-center pt-[50px] sm:pt-[100px] relative">
         <div class="absolute -bottom-20 left-5">
           <object data="./img/Vector_dots.svg" type=""></object>
         </div>
         <div class="relative">
           <img src="./img/Rectangle 32.png" alt="" class="" />
           <div
-            class="w-[84px] h-[84px] rounded-full bg-[#4270C9] absolute left-[45%] top-[40%] flex justify-center items-center"
+            class="sm:w-[84px] sm:h-[84px] w-[42px] h-[42px] rounded-full bg-[#4270C9] absolute left-[45%] top-[40%] flex justify-center items-center"
           >
             <object
               data="./img/Vector_play_big.svg"
@@ -545,7 +555,7 @@
             ></object>
           </div>
           <div
-            class="absolute lg:w-[1034px] sm:w-[100%] h-[45px] bottom-0 backdrop-filter backdrop-blur bg-[rgba(22,18,18,0.6)] flex flex-row items-center justify-around"
+            class="absolute lg:w-[1034px] w-[100%] h-[45px] bottom-0 backdrop-filter backdrop-blur bg-[rgba(22,18,18,0.6)] flex flex-row items-center justify-around"
           >
             <div class="">
               <object
@@ -593,7 +603,7 @@
       <!-- Clients review -->
 
       <div
-        class="lg:flex lg:flex-row lg:pt-[300px] justify-around relative z-10 sm:pt-[170px] sm:grid sm:grid-cols-2 sm:px-5"
+        class="lg:flex lg:flex-row lg:pt-[300px] justify-around relative z-10 sm:pt-[170px] sm:grid sm:grid-cols-2 sm:px-5 flex flex-col"
       >
         <div
           class="absolute -bottom-[10%] right-[33%] dots w-[250px] h-[250px]"
@@ -613,17 +623,19 @@
           class="absolute top-[20%] right-[17%] quote_svg"
         ></object>
 
-        <div class="translate-y-40">
+        <div class="sm:translate-y-40 hidden sm:block">
           <img src="./img/Rectangle 25.png" alt="" />
         </div>
 
-        <div><img src="./img/Rectangle 32 (2).png" alt="" /></div>
+        <div class="pt-[30px]">
+          <img src="./img/Rectangle 32 (2).png" alt="" />
+        </div>
 
         <div
           class="lg:flex lg:flex-col justify-around relative sm:grid sm:col-span-2 sm:justify-self-end sm:m-[20px]"
         >
           <div
-            class="absolute sm:left-[179px] lg:-left-[179px] -bottom-[170px] flex flex-col items-center"
+            class="absolute hidden sm:block sm:left-[179px] lg:-left-[179px] -bottom-[170px] flex flex-col items-center"
           >
             <object
               data="./img/Vector_arrow_left.svg"
@@ -664,26 +676,36 @@
               Read 1,262 more reviews
             </button>
           </div>
-          <h4 class="text-4xl font-medium sm:text-right lg:text-left">
+          <h4
+            class="text-4xl font-medium text-center sm:text-right lg:text-left pt-[10px] sm:pt-0"
+          >
             Clients review
           </h4>
-          <p class="mt-[21px] sm:text-right lg:text-left">
+          <p class="mt-[21px] text-center sm:text-right lg:text-left">
             Over 10,000 happy clients! Are you the next one?
           </p>
 
           <div
-            class="w-[434px] h-[319px] flex flex-col justify-between mr-[128px] mt-[103px] rounded-10px shadow-[0px_16px_24px_rgba(112,144,176,0.2)] z-40 relative bg-white"
+            class="sm:w-[434px] sm:h-[319px] w-[100%] flex flex-col justify-between mr-[128px] mt-[50px] sm:mt-[103px] rounded-10px shadow-[0px_16px_24px_rgba(112,144,176,0.2)] z-40 relative bg-white"
           >
-            <p class="mt-[83px] ml-[30px]">
+            <p class="sm:mt-[83px] sm:ml-[30px] p-3 text-center sm:text-left">
               <span class="text-[#4270C9]">“Dremo</span> made my life easy. It
               helped me with<br />
               the search for my first ever my dream 1BHK<br />apartment Thanks
               to the team for providing<br />smart search.”
             </p>
-            <p class="ml-[30px] -mb-[30px]">Lee Morgan, Thinglogix, Inc.</p>
-            <p class="ml-[30px] -mb-[27x] text-[#CECECE]">New york, NY 10011</p>
+            <p class="sm:ml-[30px] sm:-mb-[30px] px-3 sm:px-0 py-2 sm:py-0">
+              Lee Morgan, Thinglogix, Inc.
+            </p>
+            <p
+              class="sm:ml-[30px] sm:-mb-[27x] text-[#CECECE] px-3 sm:px-0 py-2 sm:py-0"
+            >
+              New york, NY 10011
+            </p>
 
-            <div class="flex flex-row mb-[30px] ml-[30px] -mt-[15px] relative">
+            <div
+              class="flex flex-row sm:mb-[30px] sm:ml-[30px] sm:-mt-[15px] relative px-3 py-2 sm:py-0 sm:px-0"
+            >
               <object data="./img/Vector_star.svg" type=""></object>
               <object data="./img/Vector_star.svg" type=""></object>
               <object data="./img/Vector_star.svg" type=""></object>
@@ -695,7 +717,7 @@
       </div>
 
       <!-- Newsletter-->
-      <section class="mt-[200px] relative flex flex-col">
+      <section class="sm:mt-[200px] mt-[70px] relative flex flex-col">
         <h4 class="text-4xl text-center font-semibold">
           Still have a question ?
         </h4>
@@ -706,13 +728,13 @@
         </p>
         <!-- Sign up-->
         <div
-          class="lg:w-[852px] sm:w-[100vw] md:w-[760px] h-[124px] shadow-[0px_4px_100px_rgba(242,242,245,1)] self-center mt-[100px] flex flex-row items-center justify-between"
+          class="lg:w-[852px] sm:w-[100vw] md:w-[760px] sm:h-[124px] h-[150px] shadow-[0px_4px_100px_rgba(242,242,245,1)] self-center mt-[50px] sm:mt-[100px] flex flex-col sm:flex-row items-center justify-between"
         >
-          <div class="flex flex-row">
+          <div class="flex flex-row p-3">
             <object
               data="./img/Vector_mail.svg"
               type=""
-              class="ml-[43px]"
+              class="sm:ml-[43px]"
             ></object>
             <input
               type="email"
@@ -721,7 +743,7 @@
             />
           </div>
 
-          <div class="mr-[50px]">
+          <div class="sm:mr-[50px] p-3">
             <button
               class="rounded-full bg-[#4270C9] w-[196px] h-[61px] text-white text-lg flex flex-row justify-between rounded-[60px] items-stretch shadow-[4px_20px_32px_rgba(158,175,201,0.2)] hover:font-semibold"
             >
@@ -745,11 +767,11 @@
 
       <!-- Footer-->
       <footer>
-        <div class="flex flex-row relative">
+        <div class="flex flex-col sm:flex-row relative">
           <object
             data="./img/Vector_dots_small.svg"
             type=""
-            class="absolute right-[15%] top-[15%] sm:invisible lg:visible"
+            class="absolute right-[15%] top-[15%] invisible lg:visible"
           ></object>
           <div
             class="lg:basis-4/12 flex flex-col items-center sm:justify-center lg:justify-start"
@@ -761,28 +783,28 @@
               <object
                 data="./img/Instagram.svg"
                 type=""
-                class="px-[20px]"
+                class="px-[20px] py-2"
               ></object>
               <object
                 data="./img/LinkedIn.svg"
                 type=""
-                class="px-[20px]"
+                class="px-[20px] py-2"
               ></object>
               <object
                 data="./img/Twitter.svg"
                 type=""
-                class="px-[20px]"
+                class="px-[20px] py-2"
               ></object>
               <object
                 data="./img/Facebook.svg"
                 type=""
-                class="px-[20px]"
+                class="px-[20px] py-2 h-[50px]"
               ></object>
             </div>
           </div>
 
           <div
-            class="lg:basis-8/12 bg-[rgba(242,242,242,0.5)] flex flex-row lg:justify-around lg:h-[303px] sm:h-[200px] text-[#5E5E5E]"
+            class="lg:basis-8/12 bg-[rgba(242,242,242,0.5)] flex flex-row justify-around lg:h-[303px] sm:h-[200px] text-[#5E5E5E]"
           >
             <div class="flex flex-col mt-[33px]">
               <ul class="lg:tracking-wide">

@@ -189,7 +189,7 @@ li:hover {
     margin-right: 40px;
   }
 
-  .house-pic {
+  .quote_svg {
     display: none;
   }
 
@@ -199,6 +199,71 @@ li:hover {
   }
 
   .quote_svg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .mainBody {
+    width: 100vw;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+  .h1 {
+    margin: auto;
+    font-size: 30px;
+  }
+
+  .findHomeSpan {
+    color: black;
+  }
+
+  .quote_svg {
+    display: none;
+  }
+
+  .quote_svg {
+    display: none;
+  }
+
+  .searchBar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay-div {
+    display: none;
+  }
+
+  div.vertical-line,
+  div.vertical-line2,
+  .gallery-number {
+    display: none;
+  }
+  .jajko {
+    margin: auto;
+    padding-left: 20px;
+  }
+  .h3 {
+    padding-left: 20px;
+  }
+  .gallery {
+    margin: auto;
+  }
+
+  .house-pic {
+    display: none;
+  }
+  .ellipsePic {
+    display: none;
+  }
+  .exploreMore {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .dots {
     display: none;
   }
 }
