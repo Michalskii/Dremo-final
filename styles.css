@@ -116,11 +116,11 @@ li:hover {
   }
 
   nav {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
   }
   .h1 {
     font-size: 36px;
-    margin: auto;
   }
 
   li {
@@ -170,12 +170,8 @@ li:hover {
   }
 
   nav {
-    flex-direction: column;
-  }
-
-  .h1 {
-    font-size: 36px;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   li {
@@ -209,11 +205,8 @@ li:hover {
   }
 
   nav {
-    flex-direction: column;
-  }
-  .h1 {
-    margin: auto;
-    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .findHomeSpan {
@@ -246,9 +239,7 @@ li:hover {
     margin: auto;
     padding-left: 20px;
   }
-  .h3 {
-    padding-left: 20px;
-  }
+
   .gallery {
     margin: auto;
   }
@@ -265,5 +256,24 @@ li:hover {
   }
   .dots {
     display: none;
+  }
+}
+
+#hamburger {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-ul.show {
+    display: flex;
+    margin: auto;
   }
 }

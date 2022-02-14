@@ -28,14 +28,23 @@
       <!-- Menu-->
 
       <nav
-        class="flex justify-between items-baseline lg:py-16 lg:px-24 gap-y-3"
+        class="flex justify-between items-baseline lg:py-16 lg:px-24 gap-y-3 lg:block"
       >
-        <h1 class="lg:text-4xl font-medium h1">
+        <h1 class="lg:text-4xl font-medium h1 text-4xl pl-6">
           <a href="#" class=""><span class="text-[#4270C9]">Dre</span>mo</a>
         </h1>
 
+        <div
+          class="space-y-2 lg:hidden right-0 mr-6 mt-6 burger"
+          id="hamburger"
+        >
+          <div class="w-8 h-1 bg-gray-600"></div>
+          <div class="w-8 h-1 bg-gray-600"></div>
+          <div class="w-8 h-1 bg-gray-600"></div>
+        </div>
         <ul
-          class="text-[#2C3131] text-base sm:flex sm:justify-between items-center pl-[20px] sm:pl-[100px]"
+          class="text-[#2C3131] text-base lg:flex lg:justify-between items-center pl-[20px] lg:pl-[100px] nav-ul"
+          id="nav-ul"
         >
           <li class="lg:p-8"><a href="#">Home</a></li>
           <li class="lg:p-8">
@@ -56,14 +65,14 @@
 
       <header class="py-6">
         <h2
-          class="xl:text-[64px] sm:font-medium sm:flex sm:justify-center text-4xl jajko"
+          class="xl:text-[64px] font-medium flex justify-center text-2xl sm:text-4xl jajko"
         >
           Are you looking for
           <span class="text-[#4270C9]">&nbspdream&nbsp </span> home?
         </h2>
 
         <h3
-          class="xl:text-[24px] font-light sm:flex sm:justify-center sm:text-xl pt-[20px] h3"
+          class="xl:text-[24px] font-light flex justify-center text-l sm:text-xl pt-[20px] h3"
           id="h3"
         >
           The most accurate property valuation Website in
@@ -840,5 +849,6 @@
         </p>
       </footer>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
