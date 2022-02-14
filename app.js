@@ -24,8 +24,22 @@ let searched = {
     maxPrice: document.getElementById('max-price').value
 
 }
-search.push(searched);
+
 console.log(searched)
 }
   
+document.addEventListener('DOMContentLoaded', ()=>{
+            document
+            .getElementById('submit-mail')
+            .addEventListener('click', emailSubmitted);
+        }
+        );
+
+const emailSubmitted = (ev) => {
+
+let emailAdress = {
+    email: document.getElementById('email').value
+}
+console.log(emailAdress);
+}
 
