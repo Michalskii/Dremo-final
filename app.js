@@ -8,17 +8,9 @@ hamburger.addEventListener('click', () => {
 let search = [];
 
 
-
-
- document.addEventListener('DOMContentLoaded', ()=>{
-            document
-            .getElementById('btn')
-            .addEventListener('click', addSearched);
-        }
-        );
 const addSearched = (ev) => {
 
-let searched = {
+let searched =  {
     location: document.getElementById('location').value,
     propertyType: document.getElementById('property-type').value,
     maxPrice: document.getElementById('max-price').value
@@ -26,14 +18,20 @@ let searched = {
 }
 
 console.log(searched)
+search.push(searched);
+console.log(search);
 }
+
+ document
+        .getElementById('btn')
+        .addEventListener('click', addSearched);
   
-document.addEventListener('DOMContentLoaded', ()=>{
-            document
-            .getElementById('submit-mail')
-            .addEventListener('click', emailSubmitted);
-        }
-        );
+
+
+
+           
+        
+        
 
 const emailSubmitted = (ev) => {
 
@@ -42,4 +40,8 @@ let emailAdress = {
 }
 console.log(emailAdress);
 }
+
+ document
+            .getElementById('submit-mail')
+            .addEventListener('click', emailSubmitted);
 

@@ -85,57 +85,59 @@
 
       <!-- Search bar-->
 
-      <div class="sm:flex sm:justify-center sm:-mt-8 searchBar">
-        <div
-          class="bg-white sm:w-[768px] sm:h-[108px] sm:rounded-[60px] sm:shadow-[0px_4px_100px_rgba(0,0,0,0.2)] sm:flex sm:justify-between sm:items-center"
-        >
-          <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
-            <select name="location" id="location" class="text-xl">
-              <option disabled selected>Location</option>
-              <option value="gdynia" class="">Gdynia</option>
-              <option value="sydney">Sydney</option>
-              <option value="london">London</option>
-              <option value="newyork" class="">New York</option>
-            </select>
-          </div>
-
-          <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
-            <select name="property-type" id="property-type" class="text-xl">
-              <option disabled selected>Property Type</option>
-              <option value="bungalow" class="">Bungalow</option>
-              <option value="ranch">Ranch</option>
-              <option value="townhouse">Townhouse</option>
-              <option value="tent" class="h">Tent</option>
-            </select>
-          </div>
-
+      <form>
+        <div class="sm:flex sm:justify-center sm:-mt-8 searchBar">
           <div
-            class="relative sm:ml-[80px] sm:mr-[40px] py-3 sm:py-0 text-center"
+            class="bg-white sm:w-[768px] sm:h-[108px] sm:rounded-[60px] sm:shadow-[0px_4px_100px_rgba(0,0,0,0.2)] sm:flex sm:justify-between sm:items-center"
           >
-            <select name="max-price" id="max-price" class="text-xl">
-              <option disabled selected>Max price</option>
-              <option value="10" class="">$10</option>
-              <option value="100">$100</option>
-              <option value="1000">$1000</option>
-              <option value="10000" class="">$10000</option>
-            </select>
-          </div>
+            <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
+              <select name="location" id="location" class="text-xl">
+                <option disabled selected>Location</option>
+                <option value="gdynia" class="">Gdynia</option>
+                <option value="sydney">Sydney</option>
+                <option value="london">London</option>
+                <option value="newyork" class="">New York</option>
+              </select>
+            </div>
 
-          <button
-            class="sm:mr-[80px] bg-[#4270C9] w-[54] h-[54] flex justify-center items-center mr-[40px] mx-[44%] sm:mx-0 py-5 sm:py-0 btn"
-            id="btn"
-            name="btn"
-            ;
-          >
-            <object
-              data="./img/Vector.svg"
-              type=""
-              width="30"
-              height="30"
-            ></object>
-          </button>
+            <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
+              <select name="property-type" id="property-type" class="text-xl">
+                <option disabled selected>Property Type</option>
+                <option value="bungalow" class="">Bungalow</option>
+                <option value="ranch">Ranch</option>
+                <option value="townhouse">Townhouse</option>
+                <option value="tent" class="h">Tent</option>
+              </select>
+            </div>
+
+            <div
+              class="relative sm:ml-[80px] sm:mr-[40px] py-3 sm:py-0 text-center"
+            >
+              <select name="max-price" id="max-price" class="text-xl">
+                <option disabled selected>Max price</option>
+                <option value="10" class="">$10</option>
+                <option value="100">$100</option>
+                <option value="1000">$1000</option>
+                <option value="10000" class="">$10000</option>
+              </select>
+            </div>
+
+            <button
+              class="sm:mr-[80px] bg-[#4270C9] w-[54] h-[54] flex justify-center items-center mr-[40px] mx-[44%] sm:mx-0 py-5 sm:py-0 btn"
+              id="btn"
+              name="btn"
+              ;
+            >
+              <object
+                data="./img/Vector.svg"
+                type=""
+                width="30"
+                height="30"
+              ></object>
+            </button>
+          </div>
         </div>
-      </div>
+      </form>
 
       <!-- Main section-->
       <main class="flex justify-center flex-col sm:pt-[100px] pt-[30px]">
