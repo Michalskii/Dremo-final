@@ -1,4 +1,4 @@
-const hamburger = document.getElementById('hamburger');
+const hamburger = document.getElementById('menu_checkbox');
 const navUl = document.getElementById('nav-ul');
 
 hamburger.addEventListener('click', () => {

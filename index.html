@@ -35,15 +35,23 @@
         </h1>
 
         <div
-          class="space-y-2 lg:hidden right-0 mr-6 mt-6 burger"
+          class="space-y-2 lg:hidden right-0 mr-6 mt-6 burger fixed z-40"
           id="hamburger"
         >
+          <input type="checkbox" id="menu_checkbox" />
+          <label for="menu_checkbox">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+
+          <!-- <div class="w-8 h-1 bg-gray-600"></div>
           <div class="w-8 h-1 bg-gray-600"></div>
           <div class="w-8 h-1 bg-gray-600"></div>
-          <div class="w-8 h-1 bg-gray-600"></div>
+         -->
         </div>
         <ul
-          class="text-[#2C3131] text-base lg:flex lg:justify-between items-center pl-[20px] lg:pl-[100px] nav-ul"
+          class="text-[#2C3131] text-base lg:flex lg:justify-between items-center pl-[20px] lg:pl-[100px] nav-ul fixed lg:static bg-white z-30"
           id="nav-ul"
         >
           <li class="lg:p-8"><a href="#">Home</a></li>
@@ -133,6 +141,7 @@
                 type=""
                 width="30"
                 height="30"
+                id="svg"
               ></object>
             </button>
           </div>
