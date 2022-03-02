@@ -1,30 +1,48 @@
-const hamburger = document.getElementById('menu_checkbox');
-const navUl = document.getElementById('nav-ul');
+// const hamburger = document.getElementById('menu_checkbox');
+// const navUl = document.getElementById('nav-ul');
 
-hamburger.addEventListener('click', () => {
-    navUl.classList.toggle('show');
-});
-
-let search = [];
+// hamburger.addEventListener('click', () => {
+//     navUl.classList.toggle('show');
+// });
 
 
-const addSearched = (ev) => {
 
-let searched =  {
-    location: document.getElementById('location').value,
-    propertyType: document.getElementById('property-type').value,
-    maxPrice: document.getElementById('max-price').value
+// $('#btn').click(function(){
+//    $('#nav-ul').toggleClass('show');
+//  });
 
-}
 
-console.log(searched)
-search.push(searched);
-console.log(search);
-}
+//  $('#btn').click(function() {
+//      let searched = {
+//          location: $('#location').val(),
+//          propertyType: $('#property-type').val(),
+//          maxPrice : $('#max-price').val()
+         
+         
+//          )
+//      }
+//  }
 
- document
-        .getElementById('btn')
-        .addEventListener('click', addSearched);
+// let search = [];
+
+
+// const addSearched = (ev) => {
+
+// let searched =  {
+//     location: document.getElementById('location').value,
+//     propertyType: document.getElementById('property-type').value,
+//     maxPrice: document.getElementById('max-price').value
+
+// }
+
+// console.log(searched)
+// search.push(searched);
+// console.log(search);
+// }
+
+//  document
+//         .getElementById('btn')
+//         .addEventListener('click', addSearched);
   
 
 
@@ -45,3 +63,11 @@ console.log(emailAdress);
             .getElementById('submit-mail')
             .addEventListener('click', emailSubmitted);
 
+
+
+            
+// const numbers = [28, 77, 45, 99, 27];
+ 
+// numbers.forEach(number => {  
+//   console.log("your lucky number is " + number);
+// }); 

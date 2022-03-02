@@ -99,8 +99,11 @@
             class="bg-white sm:w-[768px] sm:h-[108px] sm:rounded-[60px] sm:shadow-[0px_4px_100px_rgba(0,0,0,0.2)] sm:flex sm:justify-between sm:items-center"
           >
             <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
+              <div class="sm:absolute sm:-top-8 text-center alert" id="">
+                Pole wymagane
+              </div>
               <select name="location" id="location" class="text-xl">
-                <option disabled selected>Location</option>
+                <option disabled selected value="none">Location</option>
                 <option value="gdynia" class="">Gdynia</option>
                 <option value="sydney">Sydney</option>
                 <option value="london">London</option>
@@ -109,8 +112,11 @@
             </div>
 
             <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
+              <div class="sm:absolute sm:-top-8 text-center alert2">
+                Pole wymagane
+              </div>
               <select name="property-type" id="property-type" class="text-xl">
-                <option disabled selected>Property Type</option>
+                <option disabled selected value="none">Property Type</option>
                 <option value="bungalow" class="">Bungalow</option>
                 <option value="ranch">Ranch</option>
                 <option value="townhouse">Townhouse</option>
@@ -121,8 +127,11 @@
             <div
               class="relative sm:ml-[80px] sm:mr-[40px] py-3 sm:py-0 text-center"
             >
+              <div class="sm:absolute sm:-top-8 text-center alert3">
+                Pole wymagane
+              </div>
               <select name="max-price" id="max-price" class="text-xl">
-                <option disabled selected>Max price</option>
+                <option disabled selected value="none">Max price</option>
                 <option value="10" class="">$10</option>
                 <option value="100">$100</option>
                 <option value="1000">$1000</option>
@@ -134,7 +143,8 @@
               class="sm:mr-[80px] bg-[#4270C9] w-[54] h-[54] flex justify-center items-center mr-[40px] mx-[44%] sm:mx-0 py-5 sm:py-0 btn"
               id="btn"
               name="btn"
-              ;
+              type="button"
+              disabled="disabled"
             >
               <object
                 data="./img/Vector.svg"
@@ -868,5 +878,7 @@
       </footer>
     </div>
     <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
