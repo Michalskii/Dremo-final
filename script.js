@@ -2,9 +2,6 @@ $(document).ready(function() {
     // All your jQuery will go here!
 });
 
-
-
-
 $('#menu_checkbox').click(function(){
    $('#nav-ul').toggleClass('show');
  });
@@ -13,17 +10,57 @@ $('#menu_checkbox').click(function(){
 
 
 
- 
-if ($('#location').val() !== null ){
-  console.log('dupa')
-  $('#btn').removeAttr("disabled");
-   }
+
+
+// $('#btn').mouseover(function()
+// {$('#btn').removeAttr("disabled");
+//   console.log('fsd');
+//   alert('fds');
+// // if ($('#location').val() !== null ){
+// //   console.log('dupa')
+// //   $('#btn').removeAttr("disabled");
+// });
+
+  
+
+// $(document).ready(function() {
+	
+//    $("#location").change(function()) {
+//   let loc = 2;
+//   console.log(loc) 
+//    }
+  
+  // $("#property-type").change(function() {
+  // let type = true;
+  // console.log(type)
+
+  // $("#max-price").change(function() {
+  // let price = 5;
+  // console.log(price);
+
+// if((loc === 2) && (type === 4) && (price === true)) {
+//     console.log('jajko')
+
+//   };
+  
+  
+   
+  
+
 
  
- 
+
+
+
+//   });
+
+
+// });
+  
+
+
  $('#btn').click(function() {
      
-
 
   if($('#location').val() == null 
   //|| $('#property-type').val() == null || $('#max-price').val() == null 
@@ -67,13 +104,18 @@ if ($('#location').val() !== null ){
       $("#submit-mail").click(function(){
         let  email = $("#email").val(); 
         if (!email) {
-          alert("");
+          $('#email').attr('placeholder', 'Please enter email');
         }
         else if(email.indexOf("@") < 0 || email.indexOf(".") < 0){
-          alert("Invalid email"); 
+          $('.emailMsg').toggleClass('show');
+          $('#email').val('');
+         
 
+$('#email').attr('placeholder', '');
           } else  {
             console.log(email);
+            $('#email').val('Thank you!');
+            $('.emailMsg').toggleClass('show');
           }
         
   
@@ -83,6 +125,45 @@ if ($('#location').val() !== null ){
 
 
 
+$(".exploreMore").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#videoSection").offset().top
+    }, 2000);
+});
 
 
+
+
+$(document).ready(function() {
+	$("#max-price").change(function fsdf() {
+    var selectedVal = $("#max-price option:selected").val();
+    console.log(selectedVal)
+ 
+   
+   });
+    
+   $("#property-type").change(function() {
+      var selectedVal2 = $("#property-type option:selected").val();
+      console.log(selectedVal2);
+    
+});
+    
+
+$("#location").change(function() {
+      var selectedVal3 = $("#location option:selected").val();
+
+      console.log(selectedVal3)
+
+		
+		
+	
+
+
+
+
+  
+  });_
+ 
+  
+});
 
