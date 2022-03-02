@@ -134,25 +134,25 @@ $(".exploreMore").click(function() {
 
 
 
-$(document).ready(function() {
-	$("#max-price").change(function fsdf() {
-    var selectedVal = $("#max-price option:selected").val();
-    console.log(selectedVal)
+// $(document).ready(function() {
+// 	$("#max-price").change(function fsdf() {
+//     var selectedVal = $("#max-price option:selected").val();
+//     console.log(selectedVal)
  
    
-   });
+//    });
     
-   $("#property-type").change(function() {
-      var selectedVal2 = $("#property-type option:selected").val();
-      console.log(selectedVal2);
+//    $("#property-type").change(function() {
+//       var selectedVal2 = $("#property-type option:selected").val();
+//       console.log(selectedVal2);
     
-});
+// });
     
 
-$("#location").change(function() {
-      var selectedVal3 = $("#location option:selected").val();
+// $("#location").change(function() {
+//       var selectedVal3 = $("#location option:selected").val();
 
-      console.log(selectedVal3)
+//       console.log(selectedVal3)
 
 		
 		
@@ -162,8 +162,21 @@ $("#location").change(function() {
 
 
   
-  });_
+//   });_
  
   
-});
+// });
 
+
+
+$(document).ready(function() {
+    $('#btn').prop('disabled', true);
+    $('#dupa').change( function() {
+        if ($(this).val() !== '') {
+            $('#btn').prop('disabled', false);
+        }
+        else {
+            $('#btn').prop('disabled', true);
+        }
+    });
+});
