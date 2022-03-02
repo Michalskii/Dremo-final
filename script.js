@@ -172,8 +172,9 @@ $(".exploreMore").click(function() {
 $(document).ready(function() {
     $('#btn').prop('disabled', true);
     $('#dupa').change( function() {
-        if ($(this).val() !== '') {
+        if (($('#location').val() !== null) && ($('#max-price').val() !==null) && ($('#property-type').val() !== null) ) {
             $('#btn').prop('disabled', false);
+            
         }
         else {
             $('#btn').prop('disabled', true);
