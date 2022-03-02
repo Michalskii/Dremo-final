@@ -51,17 +51,17 @@
         
         
 
-const emailSubmitted = (ev) => {
+// const emailSubmitted = (ev) => {
 
-let emailAdress = {
-    email: document.getElementById('email').value
-}
-console.log(emailAdress);
-}
+// let emailAdress = {
+//     email: document.getElementById('email').value
+// }
+// console.log(emailAdress);
+// }
 
- document
-            .getElementById('submit-mail')
-            .addEventListener('click', emailSubmitted);
+//  document
+//             .getElementById('submit-mail')
+//             .addEventListener('click', emailSubmitted);
 
 
 

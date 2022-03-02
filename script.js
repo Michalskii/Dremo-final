@@ -13,14 +13,18 @@ $('#menu_checkbox').click(function(){
 
 
 
- if ($('#location').val() != null ){
-   $("#btn").removeAttr("disabled");
+ 
+if ($('#location').val() !== null ){
+  console.log('dupa')
+  $('#btn').removeAttr("disabled");
    }
 
  
  
  $('#btn').click(function() {
      
+
+
   if($('#location').val() == null 
   //|| $('#property-type').val() == null || $('#max-price').val() == null 
   ){
@@ -58,11 +62,27 @@ $('#menu_checkbox').click(function(){
      
  
  
- $('#email').attr('placeholder','Some New Text');
+
  
-    $('#submit-mail').click(function() {
-   let emailSubmitted = $('#submit-mail').val();
+      $("#submit-mail").click(function(){
+        let  email = $("#email").val(); 
+        if (!email) {
+          alert("");
+        }
+        else if(email.indexOf("@") < 0 || email.indexOf(".") < 0){
+          alert("Invalid email"); 
 
-   console.log(emailSubmitted);
+          } else  {
+            console.log(email);
+          }
+        
+  
+        
+      
+    });
 
- })
+
+
+
+
+
