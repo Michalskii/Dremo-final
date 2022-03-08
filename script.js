@@ -14,7 +14,8 @@ const selectType = document.getElementById('property-type');
 const selectPrice = document.getElementById('max-price');
 
 $('#location').change(function() {
-  console.log(this.value)
+  
+  
   validate(this.value);
  
 });
@@ -32,13 +33,14 @@ $('#max-price').change(function() {
 
 function validate(selected) {
   
-  selected = this.value;
   if (selected !=='none') {
-    console.log(selected);
+    console.log('true');
+    console.log(selected)
     
   }
-   if (selected ==='none') {
+   else if (selected ==='none') {
     console.log('false');
+    console.log(selected)
   };
   
   
