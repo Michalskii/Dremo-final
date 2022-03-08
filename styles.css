@@ -356,13 +356,13 @@ label div:nth-child(2) {
 }
 
 .alert {
-  opacity: 0;
+  display: none;
 }
 
 
 .show {
-  color: red;
-  opacity: 0.7;
+  color: #ff0000;
+  display: block;
   transition: 0.6s ease;
   
 }

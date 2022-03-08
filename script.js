@@ -6,29 +6,26 @@ $('#menu_checkbox').click(function(){
    $('#nav-ul').toggleClass('show');
  });
 
- let search = [];
-         
-     
-let selectLocation = document.getElementById('location');
-const selectType = document.getElementById('property-type');
-const selectPrice = document.getElementById('max-price');
+ let ds;
 
 $('#location').change(function() {
-  
-  
   validate(this.value);
- 
+ds = $('#loc');
 });
   
 $('#property-type').change(function() {
   validate(this.value);
- 
+ ds = $('#propType'); 
 });
+
+
+
 
 $('#max-price').change(function() {
   validate(this.value);
- 
+ ds = $('#maxPrice');
 });
+
 
 
 function validate(selected) {
@@ -36,11 +33,16 @@ function validate(selected) {
   if (selected !=='none') {
     console.log('true');
     console.log(selected)
+    $(ds).removeClass('show');
+    
     
   }
    else if (selected ==='none') {
     console.log('false');
     console.log(selected)
+    $(ds).addClass('show');
+    
+
   };
   
   
@@ -48,51 +50,6 @@ function validate(selected) {
 
 }
 
-
-
-
-selectLocation.addEventListener('change', validate(selectLocation));
-selectType.addEventListener('change', validate);
-selectPrice.addEventListener('change', validate);
-
-// function validate(check) {
-
-//  if (check.value ==='none') {
-//   $('.alert').addClass('show')
-//   console.log('dupa')
-// } else {
-//   $('.alert').removeClass('show')
-//   console.log('dupa2')
-// }
-
-
-// }
-
-// $('#btn').click(validate(selectLocation));
-
-
-
-//  $("#submit-mail").click(function(){
-//         let  email = $("#email").val(); 
-//         if (!email) {
-//           $('#email').attr('placeholder', 'Please enter email');
-//         }
-//         else if(email.indexOf("@") < 0 || email.indexOf(".") < 0){
-//           $('.emailMsg').toggleClass('show');
-//           $('#email').val('');
-         
-
-// $('#email').attr('placeholder', '');
-//           } else  {
-//             console.log(email);
-//             $('#email').val('Thank you!');
-//             $('.emailMsg').toggleClass('show');
-//           }
-        
-  
-        
-      
-//     });
 
 function mailValidate() {
   let mailInput = $('#email').val();
