@@ -7,101 +7,59 @@ $('#menu_checkbox').click(function(){
  });
 
  let search = [];
-
-
-
-
-
-// $('#btn').mouseover(function()
-// {$('#btn').removeAttr("disabled");
-//   console.log('fsd');
-//   alert('fds');
-// // if ($('#location').val() !== null ){
-// //   console.log('dupa')
-// //   $('#btn').removeAttr("disabled");
-// });
-
-  
-
-// $(document).ready(function() {
-	
-//    $("#location").change(function()) {
-//   let loc = 2;
-//   console.log(loc) 
-//    }
-  
-  // $("#property-type").change(function() {
-  // let type = true;
-  // console.log(type)
-
-  // $("#max-price").change(function() {
-  // let price = 5;
-  // console.log(price);
-
-// if((loc === 2) && (type === 4) && (price === true)) {
-//     console.log('jajko')
-
-//   };
-  
-  
-   
-  
-
-
- 
-
-
-
-//   });
-
-
-// });
-  
-
-
- $('#btn').click(function() {
-     
-
-  if($('#location').val() == null 
-  //|| $('#property-type').val() == null || $('#max-price').val() == null 
-  ){
-   
-  $('.alert').toggleClass('show');
-  $('#location').focus();
-  
-  }
-  
-  if ($('#property-type').val() == null) {
-     
-  $('.alert2').toggleClass('show');
-  $('#location').focus();
-    
-  } 
-   
-  if ($('#max-price').val() == null) {
-       
-  $('.alert3').toggleClass('show');
-  $('#location').focus();
-  }
-
-
-  let searched = {
-         location: $('#location').val(),
-         propertyType: $('#property-type').val(),
-         maxPrice : $('#max-price').val()
-        }
-    console.log(searched)
-    search.push(searched)
-    console.log(search)
-
-    })
          
      
- 
- 
+const selectLocation = document.getElementById('location');
+const selectType = document.getElementById('property-type');
+const selectPrice = document.getElementById('max-price');
 
- 
-      $("#submit-mail").click(function(){
+selectLocation.addEventListener('change', validate);
+selectType.addEventListener('change', validate);
+selectPrice.addEventListener('change', validate);
+
+function validate() {
+if (
+selectLocation.value ==='none' || 
+selectType.value ==='none' || 
+selectPrice.value ==='none') { 
+  $('#btn').click(function(event){
+    event.preventDefault();
+    console.log('prevented default')
+    console.log(selectLocation.value)
+    
+  });
+}
+
+ if (selectLocation.value ==='none') {
+  $('.alert').addClass('show')
+  
+} else {
+  $('.alert').removeClass('show')
+}
+
+if (selectType.value ==='none') {
+  $('#propType').addClass('show')
+  
+} else {
+  $('#propType').removeClass('show')
+}
+
+if (selectPrice.value ==='none') {
+  $('#maxPrice').addClass('show')
+  
+} else {
+  $('#maxPrice').removeClass('show')
+}
+
+
+
+}
+
+$('#btn').click(validate);
+
+
+
+ $("#submit-mail").click(function(){
         let  email = $("#email").val(); 
         if (!email) {
           $('#email').attr('placeholder', 'Please enter email');
@@ -134,25 +92,8 @@ $(".exploreMore").click(function() {
 
 
 
-// $(document).ready(function() {
-// 	$("#max-price").change(function fsdf() {
-//     var selectedVal = $("#max-price option:selected").val();
-//     console.log(selectedVal)
- 
-   
-//    });
-    
-//    $("#property-type").change(function() {
-//       var selectedVal2 = $("#property-type option:selected").val();
-//       console.log(selectedVal2);
-    
-// });
-    
 
-// $("#location").change(function() {
-//       var selectedVal3 = $("#location option:selected").val();
 
-//       console.log(selectedVal3)
 
 		
 		
@@ -162,22 +103,4 @@ $(".exploreMore").click(function() {
 
 
   
-//   });_
- 
-  
-// });
 
-
-
-$(document).ready(function() {
-    $('#btn').prop('disabled', true);
-    $('#dupa').change( function() {
-        if (($('#location').val() !== null) && ($('#max-price').val() !==null) && ($('#property-type').val() !== null) ) {
-            $('#btn').prop('disabled', false);
-            
-        }
-        else {
-            $('#btn').prop('disabled', true);
-        }
-    });
-});

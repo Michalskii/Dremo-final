@@ -359,40 +359,12 @@ label div:nth-child(2) {
   opacity: 0;
 }
 
-.alert2 {
-  opacity: 0;
-}
-.alert3 {
-  opacity: 0;
-}
 
-.alertBefore {
-  opacity: 0;
-}
-
-#alertBefore {
-  opacity: 0;
-  transition: 0.3s;
-}
-.alert.show {
+.show {
   color: red;
   opacity: 0.7;
   transition: 0.6s ease;
-}
-
-.alert2.show {
-  color: red;
-  opacity: 0.7;
-  transition: 0.6s ease;
-}
-.alert3.show {
-  color: red;
-  opacity: 0.7;
-  transition: 0.6s ease;
-}
-
-#btn.inactive {
-  cursor: not-allowed;
+  
 }
 
 .emailMsg {

@@ -93,17 +93,17 @@
 
       <!-- Search bar-->
 
-      <form id="dupa">
+      <form>
         <div class="sm:flex sm:justify-center sm:-mt-8 searchBar">
           <div
             class="bg-white sm:w-[768px] sm:h-[108px] sm:rounded-[60px] sm:shadow-[0px_4px_100px_rgba(0,0,0,0.2)] sm:flex sm:justify-between sm:items-center"
           >
             <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
-              <div class="sm:absolute sm:-top-8 text-center alert" id="">
+              <div class="sm:absolute sm:-top-8 text-center alert">
                 Pole wymagane
               </div>
               <select name="location" id="location" class="text-xl">
-                <option disabled selected>Location</option>
+                <option disabled selected value="none">Location</option>
                 <option value="gdynia" class="">Gdynia</option>
                 <option value="sydney">Sydney</option>
                 <option value="london">London</option>
@@ -112,11 +112,11 @@
             </div>
 
             <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
-              <div class="sm:absolute sm:-top-8 text-center alert2">
+              <div class="sm:absolute sm:-top-8 text-center alert" id="propType">
                 Pole wymagane
               </div>
-              <select name="property-type" id="property-type" class="text-xl">
-                <option disabled selected>Property Type</option>
+              <select name="property-type" id="property-type" required class="text-xl">
+                <option disabled selected value ="none">Property Type</option>
                 <option value="bungalow" class="">Bungalow</option>
                 <option value="ranch">Ranch</option>
                 <option value="townhouse">Townhouse</option>
@@ -127,11 +127,11 @@
             <div
               class="relative sm:ml-[80px] sm:mr-[40px] py-3 sm:py-0 text-center"
             >
-              <div class="sm:absolute sm:-top-8 text-center alert3">
+              <div class="sm:absolute sm:-top-8 text-center alert" id="maxPrice">
                 Pole wymagane
               </div>
               <select name="max-price" id="max-price" class="text-xl">
-                <option disabled selected>Max price</option>
+                <option disabled selected value="none">Max price</option>
                 <option value="10" class="">$10</option>
                 <option value="100">$100</option>
                 <option value="1000">$1000</option>
