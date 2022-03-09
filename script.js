@@ -9,33 +9,84 @@ $('#menu_checkbox').click(function(){
 
 
 $('.form').on('change', validate);
+$('#btn').on('click', btnValidate);
 
-let child = document.getElementById('location');
-let child2 = child.previousElementSibling;
+
+
+function btnValidate() {
+
+  let loc = $('#location').val();
+  let type = $('#property-type').val();
+  let price = $('#max-price').val();
+  
+  if (loc ==='none') {
+    
+    $("#location").prev().addClass('show');
+    event.preventDefault();
+    
+    if (type ==='none') {
+      
+      $("#property-type").prev().addClass('show');
+      event.preventDefault();
+      
+      
+      if (price ==='none') {
+        
+        $("#max-price").prev().addClass('show');
+        event.preventDefault();
+        
+        
+      }
+
+    }
+
+    }
+    else {
+     
+     
+      getDataForm();
+
+      $('#location',).prop('selectedIndex',0);
+      $('#property-type',).prop('selectedIndex',0);
+      $('#max-price',).prop('selectedIndex',0);
+      // let myForm = document.getElementById('myForm');
+      // let formData = new FormData(myForm);
+      // console.log(formData)
+
+    }
+
+  
+
+  
+
+  
+
+
+};
+
+function getDataForm()  {
+
+  let formData = new FormData();
+  formData.append('Location', $('#location').val());
+  formData.append('Property type', $('#property-type').val());
+  formData.append('Max price', $('#max-price').val() )
+  console.log(Array.from(formData));
+
+}
+
+
 function validate() {
   
 let id = $(this).attr("data-id");
-
-console.log(id);
-
   if (this.value !=='none') {
-    console.log('true');
+    
     $("#"+id).siblings().removeClass('show');
-    
-    
   }
    else if (this.value ==='none') {
-    console.log('false');
-    $("#"+id).siblings().addClass('show');
     
-  
- 
+    $("#"+id).siblings().addClass('show');
 
   };
-  
-  
-  
-
 }
 
 
