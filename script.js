@@ -8,42 +8,68 @@ $('#menu_checkbox').click(function(){
 
 
 
-$('.form').on('change', validate);
-$('#btn').on('click', btnValidate);
+// $('.form').on('change', validate);
+// $('#btn').on('click', btnValidate);
+$('.form-field').on('change', validateForm);
+$('#btn').on('click', handleFormSubmit);
+
+function handleFormSubmit() {
+  const isFormValid = validateForm();
+  console.log('submit', { isFormValid })
+  // return & show messages if not valid
+  // generate formData if valid
+}
+
+function showFieldError(fieldId) {
+  const errorContainer = $(`[data-field-id='${fieldId}']`);
+  console.log({ errorContainer });
+}
+
+function validateForm() {
+  const formFields = $('.form-field');
+  const fieldSValidations = [];
+
+  formFields.each((index, field) => {
+    const isFieldValid = $(field).val() !== '';
+    if(!isFieldValid) showFieldError($(field).attr('id'));
+    fieldSValidations.push(isFieldValid);
+  });
+
+  return !fieldSValidations.includes(false);
+}
 
 
 
 function btnValidate() {
-
   let loc = $('#location').val();
   let type = $('#property-type').val();
   let price = $('#max-price').val();
-  
+
   if (loc ==='none') {
-    
+
     $("#location").prev().addClass('show');
     event.preventDefault();
-    
+
     if (type ==='none') {
-      
+
       $("#property-type").prev().addClass('show');
       event.preventDefault();
-      
-      
+
+
       if (price ==='none') {
-        
+
         $("#max-price").prev().addClass('show');
         event.preventDefault();
-        
-        
+
+
       }
 
     }
 
     }
     else {
-     
-     
+
+
       getDataForm();
 
       $('#location',).prop('selectedIndex',0);
@@ -55,11 +81,11 @@ function btnValidate() {
 
     }
 
-  
 
-  
 
-  
+
+
+
 
 
 };
@@ -76,14 +102,14 @@ function getDataForm()  {
 
 
 function validate() {
-  
+
 let id = $(this).attr("data-id");
   if (this.value !=='none') {
-    
+
     $("#"+id).siblings().removeClass('show');
   }
    else if (this.value ==='none') {
-    
+
     $("#"+id).siblings().addClass('show');
 
   };
@@ -119,12 +145,12 @@ $(".exploreMore").click(function() {
 
 
 
-		
-		
-	
 
 
 
 
-  
+
+
+
+
 
