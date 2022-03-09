@@ -10,14 +10,8 @@ $('#menu_checkbox').click(function(){
 
 // $('.form').on('change', validate);
 // $('#btn').on('click', btnValidate);
-$('.form-field').on('change', handleFormFieldChange);
+$('.form-field').on('change', validateForm);
 $('#btn').on('click', handleFormSubmit);
-
-function handleFormFieldChange() {
-  const isFormValid = validateForm();
-  console.log('change', { isFormValid });
-  // show/hide errors
-}
 
 function handleFormSubmit() {
   const isFormValid = validateForm();
@@ -26,13 +20,21 @@ function handleFormSubmit() {
   // generate formData if valid
 }
 
+function showFieldError(fieldId) {
+  const errorContainer = $(`[data-field-id='${fieldId}']`);
+  console.log({ errorContainer });
+}
+
 function validateForm() {
   const formFields = $('.form-field');
   const fieldSValidations = [];
 
   formFields.each((index, field) => {
-    fieldSValidations.push($(field).val() !== '');
+    const isFieldValid = $(field).val() !== '';
+    if(!isFieldValid) showFieldError($(field).attr('id'));
+    fieldSValidations.push(isFieldValid);
   });
+
   return !fieldSValidations.includes(false);
 }
 
