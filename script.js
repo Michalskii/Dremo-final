@@ -8,42 +8,66 @@ $('#menu_checkbox').click(function(){
 
 
 
-$('.form').on('change', validate);
-$('#btn').on('click', btnValidate);
+// $('.form').on('change', validate);
+// $('#btn').on('click', btnValidate);
+$('.form-field').on('change', handleFormFieldChange);
+$('#btn').on('click', handleFormSubmit);
+
+function handleFormFieldChange() {
+  const isFormValid = validateForm();
+  console.log('change', { isFormValid });
+  // show/hide errors
+}
+
+function handleFormSubmit() {
+  const isFormValid = validateForm();
+  console.log('submit', { isFormValid })
+  // return & show messages if not valid
+  // generate formData if valid
+}
+
+function validateForm() {
+  const formFields = $('.form-field');
+  const fieldSValidations = [];
+
+  formFields.each((index, field) => {
+    fieldSValidations.push($(field).val() !== '');
+  });
+  return !fieldSValidations.includes(false);
+}
 
 
 
 function btnValidate() {
-
   let loc = $('#location').val();
   let type = $('#property-type').val();
   let price = $('#max-price').val();
-  
+
   if (loc ==='none') {
-    
+
     $("#location").prev().addClass('show');
     event.preventDefault();
-    
+
     if (type ==='none') {
-      
+
       $("#property-type").prev().addClass('show');
       event.preventDefault();
-      
-      
+
+
       if (price ==='none') {
-        
+
         $("#max-price").prev().addClass('show');
         event.preventDefault();
-        
-        
+
+
       }
 
     }
 
     }
     else {
-     
-     
+
+
       getDataForm();
 
       $('#location',).prop('selectedIndex',0);
@@ -55,11 +79,11 @@ function btnValidate() {
 
     }
 
-  
 
-  
 
-  
+
+
+
 
 
 };
@@ -76,14 +100,14 @@ function getDataForm()  {
 
 
 function validate() {
-  
+
 let id = $(this).attr("data-id");
   if (this.value !=='none') {
-    
+
     $("#"+id).siblings().removeClass('show');
   }
    else if (this.value ==='none') {
-    
+
     $("#"+id).siblings().addClass('show');
 
   };
@@ -119,12 +143,12 @@ $(".exploreMore").click(function() {
 
 
 
-		
-		
-	
 
 
 
 
-  
+
+
+
+
 
