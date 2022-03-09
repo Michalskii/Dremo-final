@@ -6,42 +6,42 @@ $('#menu_checkbox').click(function(){
    $('#nav-ul').toggleClass('show');
  });
 
- let ds;
 
 $('#location').change(function() {
   validate(this.value);
-ds = $('#loc');
+
 });
   
 $('#property-type').change(function() {
   validate(this.value);
- ds = $('#propType'); 
+ 
 });
-
-
 
 
 $('#max-price').change(function() {
   validate(this.value);
- ds = $('#maxPrice');
+ 
 });
 
 
 
-function validate(selected) {
+function validate() {
   
-  if (selected !=='none') {
+
+
+
+  if (this.value !=='none') {
     console.log('true');
-    console.log(selected)
-    $(ds).removeClass('show');
+    console.log(this.value)
     
+    console.log(selectedItems);
     
   }
-   else if (selected ==='none') {
+   else if (this.value ==='none') {
     console.log('false');
-    console.log(selected)
-    $(ds).addClass('show');
+    console.log(this.value)
     
+    console.log(selectedItems);
 
   };
   

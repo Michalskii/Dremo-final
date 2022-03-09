@@ -115,7 +115,8 @@
               <div class="sm:absolute sm:-top-8 text-center alert" id="propType">
                 Pole wymagane
               </div>
-              <select name="property-type" id="property-type" required class="text-xl">
+              <select name="property-type" id="property-type" required class="text-xl" 
+              onchange="validate();">
                 <option  value ="none">Property Type</option>
                 <option value="bungalow" class="">Bungalow</option>
                 <option value="ranch">Ranch</option>
