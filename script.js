@@ -7,41 +7,29 @@ $('#menu_checkbox').click(function(){
  });
 
 
-$('#location').change(function() {
-  validate(this.value);
 
-});
-  
-$('#property-type').change(function() {
-  validate(this.value);
- 
-});
+$('.form').on('change', validate);
 
-
-$('#max-price').change(function() {
-  validate(this.value);
- 
-});
-
-
-
+let child = document.getElementById('location');
+let child2 = child.previousElementSibling;
 function validate() {
   
+let id = $(this).attr("data-id");
 
-
+console.log(id);
 
   if (this.value !=='none') {
     console.log('true');
-    console.log(this.value)
+    $("#"+id).siblings().removeClass('show');
     
-    console.log(selectedItems);
     
   }
    else if (this.value ==='none') {
     console.log('false');
-    console.log(this.value)
+    $("#"+id).siblings().addClass('show');
     
-    console.log(selectedItems);
+  
+ 
 
   };
   

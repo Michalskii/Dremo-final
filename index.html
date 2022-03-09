@@ -21,9 +21,12 @@
       };
     </script>
     <link rel="stylesheet" href="styles.css" />
+  
   </head>
 
   <body class="font-poppins">
+   
+
     <div class="mainBody relative">
       <!-- Menu-->
 
@@ -99,10 +102,10 @@
             class="bg-white sm:w-[768px] sm:h-[108px] sm:rounded-[60px] sm:shadow-[0px_4px_100px_rgba(0,0,0,0.2)] sm:flex sm:justify-between sm:items-center"
           >
             <div class="relative sm:ml-[80px] py-3 sm:py-0 text-center">
-              <div class="sm:absolute sm:-top-8 text-center alert" id="loc">
+              <div class="sm:absolute sm:-top-8 text-center alert" id="loca">
                 Pole wymagane
               </div>
-              <select name="location" id="location" class="text-xl">
+              <select name="location" id="location" class="text-xl form" data-id="location">
                 <option  value="none">Location</option>
                 <option value="gdynia" class="">Gdynia</option>
                 <option value="sydney">Sydney</option>
@@ -115,8 +118,8 @@
               <div class="sm:absolute sm:-top-8 text-center alert" id="propType">
                 Pole wymagane
               </div>
-              <select name="property-type" id="property-type" required class="text-xl" 
-              onchange="validate();">
+              <select name="property-type" id="property-type"  class="text-xl form" data-id="property-type"
+              >
                 <option  value ="none">Property Type</option>
                 <option value="bungalow" class="">Bungalow</option>
                 <option value="ranch">Ranch</option>
@@ -131,8 +134,8 @@
               <div class="sm:absolute sm:-top-8 text-center alert" id="maxPrice">
                 Pole wymagane
               </div>
-              <select name="max-price" id="max-price" class="text-xl">
-                <option disabled selected value="none">Max price</option>
+              <select name="max-price" id="max-price" data-id="max-price" class="text-xl form">
+                <option  value="none">Max price</option>
                 <option value="10" class="">$10</option>
                 <option value="100">$100</option>
                 <option value="1000">$1000</option>
