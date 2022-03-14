@@ -368,15 +368,9 @@ label div:nth-child(2) {
   
 }
 
-.emailMsg {
+#mailMessage {
   color: red;
-  opacity: 0;
-}
-
-.emailMsg.show {
-  opacity: 0.7;
-  transition: 0.5s;
-  color: red;
+  
 }
 
 .navLi:hover {
