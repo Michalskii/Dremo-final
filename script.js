@@ -116,20 +116,37 @@ let id = $(this).attr("data-id");
 }
 
 
+
+
 function mailValidate() {
   let mailInput = $('#email').val();
-  console.log(mailInput);
-  $('#mailMessage').text("das");
+  var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+if (testEmail.test(mailInput))
+
+{
+  console.log(mailInput)
+  removeMailError();
 }
+    
+else
+    
+    {console.log('not mail')
+    showMailError();
+  }}
 
-
-
+function showMailError() {
+  $('#mailMessage').html("Please enter valid email adress")
+}
 
 $('#submit-mail').click(function() {
 mailValidate();
 
 
+
 })
+function removeMailError() {
+  $('#mailMessage').html("")
+}
 
 
 
