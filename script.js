@@ -8,87 +8,53 @@ $('#menu_checkbox').click(function(){
 
 
 
-// $('.form').on('change', validate);
-// $('#btn').on('click', btnValidate);
+
 $('.form-field').on('change', validateForm);
 $('#btn').on('click', handleFormSubmit);
 
 function handleFormSubmit() {
   const isFormValid = validateForm();
-  console.log('submit', { isFormValid })
-  // return & show messages if not valid
-  // generate formData if valid
+  
+if (isFormValid) {
+  getDataForm();
+}
+else {
+  console.log('not valid')
+}
+
 }
 
 function showFieldError(fieldId) {
   const errorContainer = $(`[data-field-id='${fieldId}']`);
-  console.log({ errorContainer });
+  $(errorContainer).addClass('show')
+  
 }
 
 function validateForm() {
   const formFields = $('.form-field');
   const fieldSValidations = [];
-
+  
   formFields.each((index, field) => {
     const isFieldValid = $(field).val() !== '';
     if(!isFieldValid) showFieldError($(field).attr('id'));
+    else {
+      removeFieldError($(field).attr('id'));
+    }
     fieldSValidations.push(isFieldValid);
-  });
+  
+  } 
+  );
+  
 
-  return !fieldSValidations.includes(false);
+  return !fieldSValidations.includes(false)
+
 }
 
-console.log('test');
+function removeFieldError(fieldId) {
+  const errorContainer = $(`[data-field-id='${fieldId}']`);
+   $(errorContainer).removeClass('show')
+}
 
-function btnValidate() {
-  let loc = $('#location').val();
-  let type = $('#property-type').val();
-  let price = $('#max-price').val();
-
-  if (loc ==='none') {
-
-    $("#location").prev().addClass('show');
-    event.preventDefault();
-
-    if (type ==='none') {
-
-      $("#property-type").prev().addClass('show');
-      event.preventDefault();
-
-
-      if (price ==='none') {
-
-        $("#max-price").prev().addClass('show');
-        event.preventDefault();
-
-
-      }
-
-    }
-
-    }
-    else {
-
-
-      getDataForm();
-
-      $('#location',).prop('selectedIndex',0);
-      $('#property-type',).prop('selectedIndex',0);
-      $('#max-price',).prop('selectedIndex',0);
-      // let myForm = document.getElementById('myForm');
-      // let formData = new FormData(myForm);
-      // console.log(formData)
-
-    }
-
-
-
-
-
-
-
-
-};
 
 function getDataForm()  {
 
@@ -100,20 +66,6 @@ function getDataForm()  {
 
 }
 
-
-function validate() {
-
-let id = $(this).attr("data-id");
-  if (this.value !=='none') {
-
-    $("#"+id).siblings().removeClass('show');
-  }
-   else if (this.value ==='none') {
-
-    $("#"+id).siblings().addClass('show');
-
-  };
-}
 
 
 
