@@ -38,7 +38,7 @@ function validateForm() {
   return !fieldSValidations.includes(false);
 }
 
-
+console.log('test');
 
 function btnValidate() {
   let loc = $('#location').val();
