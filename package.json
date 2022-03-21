@@ -1,0 +1,23 @@
+{
+  "name": "dremo",
+  "version": "1.0.0",
+  "description": "Dremo landing page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michalskii/Dremo-final.git"
+  },
+  "author": "Michalski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michalskii/Dremo-final/issues"
+  },
+  "homepage": "https://github.com/Michalskii/Dremo-final#readme",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-concat": "^2.0.0"
+  }
+}

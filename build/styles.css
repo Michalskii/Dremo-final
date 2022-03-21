@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+.mainBody {
+  width: 1440px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+}
+
+div.vertical-line {
+  border-left: 2px solid black;
+  height: 95px;
+  position: absolute;
+  left: 9%;
+  top: 25%;
+  transform: translateY(90deg);
+}
+
+div.vertical-line2 {
+  border-left: 2px solid rgb(179, 179, 179);
+  height: 148px;
+  position: absolute;
+  left: 9%;
+  top: 25%;
+  transform: translateY(90deg);
+}
+
+select {
+  color: #5e5e5e;
+  padding: 8px 12px;
+  cursor: pointer;
+
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+#svg {
+  pointer-events: none;
+}
+
+select:hover,
+select:focus {
+  background-color: #fcfcfc;
+  outline: none;
+}
+
+select option {
+  background-color: white;
+}
+select option:hover {
+  background-color: white;
+}
+
+.bookNow {
+  transition: 0.3s;
+}
+
+.green {
+  color: green;
+}
+.bookNow:hover {
+  background-color: white;
+  color: #4270c9;
+}
+
+.bookNow:hover > .bookNowDiv {
+  background-color: #4270c9;
+}
+
+.exploreMore {
+  transition: 0.3s;
+}
+
+.exploreMore:hover {
+  background-color: #4270c9;
+}
+.exploreMore:hover > .exploreSp {
+  color: white;
+}
+.exploreMore:hover > .exploreMoreDiv {
+  background-color: white;
+}
+.findHome:hover {
+  background-color: white;
+  transition: 0.4s;
+  border: 0.2px solid grey;
+}
+
+.findHomeSpan {
+  color: white;
+}
+.findHome:hover > .findHomeSpan {
+  color: #4270c9;
+  font-weight: 500;
+}
+li:hover {
+  font-weight: 500;
+}
+li {
+  cursor: pointer;
+}
+
+.dots {
+  z-index: -10;
+  background-image: radial-gradient(#949ed2 20%, transparent 20%);
+  background-color: white;
+  background-position: 0 0, 50px 50px;
+  background-size: 21px 21px;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainBody {
+    margin: auto;
+    width: 1440;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .mainBody {
+    width: 100vw;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .h1 {
+    font-size: 36px;
+  }
+
+  li {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .overlay-div {
+    display: none;
+  }
+
+  .gallery {
+    margin: 20px;
+  }
+
+  div.vertical-line,
+  div.vertical-line2,
+  .gallery-number {
+    display: none;
+  }
+
+  .bookNow {
+    margin-left: 75px;
+  }
+
+  .house-pic {
+    display: none;
+  }
+
+  .featuredHomes {
+    padding-top: 50px;
+    align-items: center;
+  }
+  .exploreMore {
+    margin-top: 20px;
+  }
+
+  .quote_svg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .mainBody {
+    width: 100vw;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gallery {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .quote_svg {
+    display: none;
+  }
+
+  .featuredHomes {
+    padding-top: 50px;
+    align-items: center;
+  }
+
+  .quote_svg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .mainBody {
+    width: 100vw;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .findHomeSpan {
+    color: black;
+  }
+
+  .quote_svg {
+    display: none;
+  }
+
+  .quote_svg {
+    display: none;
+  }
+
+  .searchBar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay-div {
+    display: none;
+  }
+
+  div.vertical-line,
+  div.vertical-line2,
+  .gallery-number {
+    display: none;
+  }
+  .jajko {
+    margin: auto;
+    padding-left: 20px;
+  }
+
+  .gallery {
+    margin: auto;
+  }
+
+  .house-pic {
+    display: none;
+  }
+  .ellipsePic {
+    display: none;
+  }
+  .exploreMore {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .dots {
+    display: none;
+  }
+}
+
+#hamburger {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-ul.show {
+    display: flex;
+    margin: auto;
+  }
+}
+
+#menu_checkbox {
+  display: none;
+}
+
+label {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: -30px auto 0 auto;
+  cursor: pointer;
+}
+
+label:before {
+  /* content: ""; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transition: 1.2s cubic-bezier(0, 0.96, 1, 0.02) background-color;
+}
+
+label div {
+  position: relative;
+  top: 0;
+  height: 7px;
+  background-color: rgb(15, 11, 11);
+  margin-bottom: 12px;
+  transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+    0.3s ease right;
+  border-radius: 2px;
+}
+
+label div:first-child {
+  transform-origin: 0;
+}
+
+label div:last-child {
+  margin-bottom: 0;
+  transform-origin: 50px;
+}
+
+label div:nth-child(2) {
+  right: 0;
+  width: 50px;
+}
+
+#menu_checkbox:checked + label div:first-child {
+  top: -6px;
+  transform: rotateZ(45deg);
+  width: 50px;
+}
+
+#menu_checkbox:checked + label div:last-child {
+  top: 6px;
+  transform: rotateZ(45deg);
+  width: 50px;
+}
+
+#menu_checkbox:checked + label div:nth-child(2) {
+  width: 70px;
+  top: 0;
+  right: 13px;
+  transform: rotateZ(-45deg);
+}
+
+.alert {
+  opacity: 0;
+}
+
+
+.show{
+  color: #ff0000;
+  display: block;
+  transition: 0.6s ease;
+  opacity: 1;
+  
+}
+
+#mailMessage {
+  color: red;
+  
+}
+
+.navLi:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+.btn:hover {
+  transition: 0.4s;
+  /* opacity: 0.4; */
+  animation: jump 0.7s ease 0.3s infinite alternate;
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  50% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.subscribeBtn:hover .subscribeSpan {
+  display: none;
+}
+.subscribeBtn:hover .subscribeDiv {
+  transform: translate(132px);
+  transition: 0.8s;
+}
+
+@import "/variables.scss";
+
+.rectangle8 {
+  color: red;
+}
+
+/* No CSS *//*# sourceMappingURL=variables.css.map */
+$PrimaryTextColor: grey;
