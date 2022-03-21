@@ -19,5 +19,8 @@
   "devDependencies": {
     "grunt": "^1.4.1",
     "grunt-contrib-concat": "^2.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.2.31"
   }
 }
